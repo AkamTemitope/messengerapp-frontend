@@ -27,6 +27,7 @@ function InputSection() {
             setconversation(foundConversation) 
         }
         setinput("")
+        setshowPicker(false)
         
     }, [toggleConversation._id, toggleConversation.type, contacts, groups])
 
