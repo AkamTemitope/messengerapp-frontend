@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const instance = axios.create({
-    baseURL: process.env.ENDPOINT
+    baseURL: "https://webchatt-backend.herokuapp.com/"
 })
 
 export default instance
