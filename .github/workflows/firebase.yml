@@ -35,6 +35,7 @@ jobs:
       - name: yarn install, build
         run: |
           yarn install
+          yarn upgrade
           yarn build
           
       # Runs a set of commands using the runners shell
