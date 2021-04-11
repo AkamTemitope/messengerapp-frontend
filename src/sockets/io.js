@@ -5,13 +5,13 @@ import { updateBlockStatus, deleteAllMessages, updateGroup, addGroup, removeGrou
 import events from "./events"
 
 let socket = null
-// const ENDPOINT = "http://localhost:9000" 
-// const options = {transports: ['websocket', 'polling', 'flashsocket']}
+const ENDPOINT = "https://webchatt-backend.herokuapp.com/" 
+const options = {transports: ['websocket', 'polling', 'flashsocket']}
 
 /// connect to server
 export const connect = (_id, dispatch) => {
 
-    socket = io()
+    socket = io(ENDPOINT, options)
     console.log("socket connected")
     socket.emit(events.join, _id)
     dispatch(setIsActive(true))
