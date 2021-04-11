@@ -33,9 +33,9 @@ jobs:
       - name: Run a one-line script
         run: npm install -g yarn
       - name: yarn install, build
-        run: |
-          yarn install
-          yarn build
+        run: yarn install
+      - name: yarn build
+        run: yarn build
           
       # Runs a set of commands using the runners shell
       - name: Archive Build
