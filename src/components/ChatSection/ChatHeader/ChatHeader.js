@@ -63,7 +63,7 @@ function ChatHeader() {
                         <GoPrimitiveDot style={ {color: is_active? "green" : "grey" } } />}
                     </span>
                 </div>
-                <CgMoreVertical />
+                <CgMoreVertical title="Not working yet" />
             </div>
             }
         </>

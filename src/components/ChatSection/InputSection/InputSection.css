@@ -28,7 +28,6 @@
 }
 
 .inputSection_icons {
-    /* position: relative; */
     display: flex;
     flex: .2;
     align-items: center;
@@ -50,7 +49,6 @@
     position: absolute!important;
     bottom: 100%;
     right: 0;
-    background-color: black;
-    width: 450px!important;
+    width: 480px!important;
 
 }

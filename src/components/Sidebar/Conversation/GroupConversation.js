@@ -24,7 +24,7 @@ function GroupConversation( { group } ) {
                 <div className="groupConversation_right_top">
                     <p>{group.groupname}</p>
                     <span>{group.last_message && moment(group.last_message.timestamp).calendar()}</span>
-                    <IoMdArrowDropright  onClick={() => { alert("Display more options") }} />
+                    <IoMdArrowDropright title="Not working yet" />
                 </div>
                 <div className="groupConversation_right_bottom">
                     <p>{group.last_message? group.last_message.body : "No messages"}</p>

@@ -39,7 +39,7 @@ function ContactConversation( {contact}) {
                 <div className="contactConversation_right_top">
                     <p>{otherContact.username}</p>
                     <span>{contact.last_message && moment(contact.last_message.timestamp).calendar() }</span>
-                    <IoMdArrowDropright onClick={() => { alert("Display more options") }} />
+                    <IoMdArrowDropright title="Not working yet" />
                 </div>
                 <div className="contactConversation_right_bottom">
                     <p>{contact.last_message? contact.last_message.body : "No messages"}</p>
