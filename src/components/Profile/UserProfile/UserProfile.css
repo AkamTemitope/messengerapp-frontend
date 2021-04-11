@@ -1,0 +1,181 @@
+.userProfile {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: 30%;
+    height: 98vh;
+    border-right: 2px solid black;
+}
+
+.userProfile_top {
+    display: flex;
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    min-height: 64px;
+    height: 64px;
+    padding-right: 5px;
+    /* border-bottom: 1px solid black; */
+}
+
+
+.userProfile_top > p  {
+    flex: 1;
+    text-align: center;
+}
+.userProfile_top > svg {
+    font-size: 1.5rem;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.userProfile_top > svg:active {
+    background-color: rgb(224, 224, 224);
+    border-radius: 50%;
+}
+
+.userProfile_middle {
+    display: flex;
+    flex: .5;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-top: 1px solid black;
+}
+.userProfile_middle > img {
+    outline: red;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: scale(1, 1);
+    transition: transform .4s ease;
+    cursor: pointer;
+}
+
+.userProfile_middle >img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.userProfile_middle > p {
+    position: absolute;
+    display: flex;
+    margin-left: 10px;
+    bottom: 0;
+    left: 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: green;
+}
+.contactProfile_middle > p > svg {
+    align-self: center;
+}
+
+.userProfile_bottom {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: .2;
+    border-top: 1px solid black;
+    margin-bottom: 10px;
+
+}
+
+.userProfile_bottom > p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.userProfile_bottom > p > span {
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    color: grey;
+    font-size: smaller;
+    padding-right: 3px;
+    border-radius: 5px;
+   cursor: pointer;
+   /* box-shadow: 5px 3px 1px -2px black; */
+
+}
+
+.userProfile_bottom > p > span:hover {
+    box-shadow: 5px 3px 1px -2px black;
+    color: black;
+}
+
+.userProfile_bottom > span {
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+
+
+.userProfile_logout {
+    padding: 10px;
+    margin: 0 50px;
+    border: none;
+    background-color: #ff2929;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.3rem;
+    transition: background-color .3s ease-in;
+    outline: none;
+}
+
+.userProfile_logout:hover {
+    background-color: #000000;
+}
+
+
+
+.userProfile_bottom > form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -10%;
+    right: center;
+    width:  210px;
+    background-color: rgb(197, 197, 197);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+
+.userProfile_bottom > form > input {
+    padding: 5px;
+    font-size: 1.2rem;
+    width:200px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.userProfile_bottom > form > button {
+    padding: 5px 10px;
+    margin-top: 5px;
+    outline: transparent;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    color: grey;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.userProfile_bottom > form > button:hover {
+    box-shadow: 2px 5px 1px -2px black;
+    color: black;
+
+}
+
+.userProfile_bottom > form > button:nth-child(3):hover {
+    box-shadow: 2px 5px 1px -2px red;
+    color: red;
+
+}

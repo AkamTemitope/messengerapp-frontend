@@ -1,0 +1,195 @@
+.contactProfile {
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+    width: 70%;
+    border-top: none;
+}
+
+
+.contactProfile_scroll {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.contactProfile_scroll::-webkit-scrollbar {
+    width: .4rem;
+}
+
+.contactProfile_scroll::-webkit-scrollbar-track {
+    background-image: linear-gradient(rgb(231, 231, 231), rgb(236, 236, 236));
+    border-radius: 25px;
+}
+
+.contactProfile_scroll::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(rgb(173, 173, 173), rgb(102, 102, 104));
+}
+
+
+
+.contactProfile_top {
+    display: flex;
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    min-height: 64px;
+    height: 64px;
+    padding-right: 5px;
+    border-bottom: 1px solid black;
+}
+
+
+.contactProfile_top > p  {
+    flex: 1;
+    text-align: center;
+}
+.contactProfile_top > svg {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.contactProfile_top > svg:active {
+    background-color: rgb(224, 224, 224);
+    border-radius: 50%;
+}
+
+.contactProfile_middle {
+    display: flex;
+    min-height: 450px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* border: 1px solid black; */
+}
+.contactProfile_middle > img {
+    outline: red;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: scale(1, 1);
+    transition: transform .4s ease;
+    cursor: pointer;
+}
+
+.contactProfile_middle >img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.contactProfile_middle > p {
+    position: absolute;
+    display: flex;
+    margin-left: 10px;
+    bottom: 0;
+    left: 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: green;
+}
+.contactProfile_middle > p > svg {
+    align-self: center;
+}
+
+.contactProfile_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 128px;
+    /* padding: 20px; */
+    border-top: 1px solid black;
+
+}
+
+.contactProfile_details > p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.contactProfile_details > span {
+    font-size: 1.2rem;
+}
+
+.contactProfile_bottom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+    padding: 10px;
+
+}
+
+.contactProfile_bottom > button {
+    padding: 10px 50px;
+    margin: 15px;
+    border: none;
+    background-color: #297bff;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.3rem;
+    transition: background-color .3s ease-in;
+    outline: none;
+}
+
+.contactProfile_bottom > button:hover {
+    background-color: #000000;
+}
+
+.contactProfile_block {
+    background-color: #ff2929 !important;
+
+}
+.contactProfile_block:hover {
+    background-color: #000000 !important;
+}
+
+
+
+/*     */
+.deleteMessages {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -10%;
+    right: center;
+    width:  350px;
+    background-color: rgb(197, 197, 197);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.deleteMessages > p:hover {
+    box-shadow: 2px 5px 1px -2px black;
+    color: black;
+
+}
+
+.deleteMessages > span {
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 8px;
+    /* cursor: pointer; */
+}
+
+.deleteMessages > p {
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    color: grey;
+    cursor: pointer;
+}
+
+.deleteMessages > p:nth-child(2):hover {
+    box-shadow: 2px 5px 1px -2px red;
+    color: red;
+}

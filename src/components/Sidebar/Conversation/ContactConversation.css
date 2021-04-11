@@ -1,0 +1,86 @@
+.contactConversation {
+    height: 64px;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+.contactConversation:hover {
+    background-color: rgb(240, 240, 240);
+}
+.contactConversation:hover .contactConversation_right_top > svg{
+    display: block;
+    
+}
+
+.contactConversation_left {
+    margin: 0 10px;
+}
+
+.contactConversation_right {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    flex: 1;
+}
+
+.contactConversation_right_top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    position: relative;
+
+}
+
+.contactConversation_right_top > p {
+    flex: 1;
+    font-size: 1.2rem;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contactConversation_right_top > span {
+    font-size: .6rem;
+    opacity: .7;
+    padding-right: 20px;
+}
+
+.contactConversation_right_top > svg {
+    display: none;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    transition: display 1s ease;
+}
+
+.contactConversation_right_top > svg:active {
+    background-color: rgb(224, 224, 224);
+    border-radius: 50%;
+}
+
+.contactConversation_right_bottom {
+    display: flex;
+    align-items: center;
+
+}
+
+.contactConversation_right_bottom > p {
+    flex: 1;
+    font-size: .8rem;
+    font-weight: 300;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+}
+.contactConversation_right_bottom > svg {
+    font-size: 1.2rem;
+}

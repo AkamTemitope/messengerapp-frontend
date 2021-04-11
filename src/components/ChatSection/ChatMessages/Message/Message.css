@@ -1,0 +1,40 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    background-color: rgb(167, 167, 167);
+    max-width: 70%;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px 10px 10px 0;
+}
+
+.left {
+    align-self: flex-start;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 0;
+
+}
+
+.message_details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+}
+.message_details > p {
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: .9;
+    padding-right: 20px;
+}
+.message_details > span {
+    font-size: .8rem;
+}
+
+.message > p {
+    font-size: 1.3rem;
+    font-weight: 400;
+}

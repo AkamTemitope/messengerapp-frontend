@@ -1,0 +1,56 @@
+.inputSection {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 64px;
+    height: 64px;
+    border-top: 1px solid black;
+}
+
+.inputSection > form {
+    display: flex;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.inputSection > form > input {
+    flex: 1;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 2px solid #297bff;
+    outline: none;
+}
+
+.inputSection > form > button {
+    display: none;
+}
+
+.inputSection_icons {
+    /* position: relative; */
+    display: flex;
+    flex: .2;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.inputSection_icons > svg {
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.inputSection_icons > svg:active {
+    background-color: rgb(224, 224, 224);
+    border-radius: 40%;
+}
+
+.emoji-picker-react {
+    position: absolute!important;
+    bottom: 100%;
+    right: 0;
+    background-color: black;
+    width: 500px!important;
+
+}

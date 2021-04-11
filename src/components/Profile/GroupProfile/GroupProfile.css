@@ -1,0 +1,374 @@
+.groupProfile {
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+    width: 70%;
+    border-top: none;
+}
+
+
+.groupProfile_scroll {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+
+}
+
+.groupProfile_scroll::-webkit-scrollbar {
+    width: .4rem;
+}
+
+.groupProfile_scroll::-webkit-scrollbar-track {
+    background-image: linear-gradient(rgb(231, 231, 231), rgb(236, 236, 236));
+    border-radius: 25px;
+}
+
+.groupProfile_scroll::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(rgb(173, 173, 173), rgb(102, 102, 104));
+}
+
+
+.groupProfile_top {
+    display: flex;
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    min-height: 64px;
+    height: 64px;
+    padding-right: 5px;
+    border-bottom: 1px solid black;
+}
+
+.groupProfile_top > p  {
+    flex: 1;
+    text-align: center;
+}
+
+.groupProfile_top > svg {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.groupProfile_top > svg:active {
+    background-color: rgb(224, 224, 224);
+    border-radius: 50%;
+}
+
+.groupProfile_middle {
+    position: relative;
+    display: flex;
+    min-height: 450px;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.groupProfile_middle > img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: scale(1, 1);
+    transition: transform .4s ease;
+    cursor: pointer;
+}
+
+.groupProfile_middle >img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.groupProfile_middle > p {
+    /* display: none; */
+    position: absolute;
+    top: center;
+    right: center;
+    font-size: .8rem;
+    font-weight: 300;
+    color: white;
+    z-index: 1;
+}
+
+.groupProfile_middle > form {
+    position: absolute;
+    bottom: -100px;
+    right: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: center;
+    min-width:  250px;
+    background-color: rgb(197, 197, 197);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.groupProfile_middle > form > input {
+    padding: 5px;
+    font-size: 1.2rem;
+    width: 250px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.groupProfile_middle > form > button {
+    padding: 5px 10px;
+    margin-top: 5px;
+    outline: transparent;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    color: grey;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.groupProfile_middle > form > button:hover {
+    box-shadow: 2px 5px 1px -2px black;
+    color: black;
+
+}
+
+.groupProfile_middle > form > button:nth-child(3):hover {
+    box-shadow: 2px 5px 1px -2px red;
+    color: red;
+
+}
+
+.groupProfile_info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.groupProfile_info > p {
+    font-size: 1.8rem;
+    padding: 10px;
+
+}
+
+.groupProfile_info > p > span{
+    padding-right: 3px;
+    margin-left: 20px;
+    color: grey;
+    font-size: smaller;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.groupProfile_info > span {
+    font-size: 1.1rem;
+    padding-left: 10px;
+} 
+
+.groupProfile_details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: fit-content;
+    padding: 10px 15px;
+    border-top: 1px solid black;
+
+}
+
+.groupProfile_details > h5 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    opacity: .7;
+}
+
+.groupProfile_details > h5 > span {
+    font-weight: normal;
+    opacity: 1;
+    padding-right: 3px;
+    margin-left: 20px;
+    color: grey;
+    font-size: smaller;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.groupProfile_details > h5 > span:hover, .groupProfile_info > p > span:hover {
+    box-shadow: 5px 3px 1px -2px black;
+    color: black;
+}
+
+.groupProfile_details > span {
+    font-size: 1.4rem;
+    text-align:left;
+}
+
+.groupProfile_details > form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 10%;
+    right: center;
+    min-width:  400px;
+    background-color: rgb(197, 197, 197);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.groupProfile_details > form > textarea {
+    padding: 5px;
+    font-size: 1.2rem;
+    width: 400px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.groupProfile_details > form > button {
+    padding: 5px 10px;
+    margin-top: 5px;
+    outline: transparent;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    color: grey;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.groupProfile_details > form > button:hover {
+    box-shadow: 2px 5px 1px -2px black;
+    color: black;
+
+}
+
+.groupProfile_details > form > button:nth-child(3):hover {
+    box-shadow: 2px 5px 1px -2px red;
+    color: red;
+
+}
+
+
+.groupProfile_bottom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+    padding: 10px;
+
+}
+
+.groupProfile_bottom > button {
+    padding: 10px 50px;
+    margin: 15px;
+    border: none;
+    background-color: #297bff;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.3rem;
+    transition: background-color .3s ease-in;
+    outline: none;
+}
+
+.groupProfile_bottom > button:hover {
+    background-color: #000000;
+}
+
+.groupProfile_delete {
+    background-color: #ff2929 !important;
+
+}
+.groupProfile_delete:hover {
+    background-color: #000000 !important;
+}
+
+.groupProfile_members {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+}
+
+.groupProfile_scroll > span {
+    align-self: center;
+    font-size: 2rem;
+    padding: 10px 0;
+    text-decoration: underline;
+} 
+
+
+.addMember, .groupProfile_bottom_LD {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -10%;
+    right: center;
+    width:  350px;
+    background-color: rgb(197, 197, 197);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.addMember > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.addMember > form > input {
+    padding: 5px;
+    font-size: 1.2rem;
+    width: 300px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.addMember > form > button {
+    padding: 5px 10px;
+    margin-top: 5px;
+    outline: transparent;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    color: grey;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.addMember > form > button:hover, .groupProfile_bottom_LD > p:hover {
+    box-shadow: 2px 5px 1px -2px black;
+    color: black;
+
+}
+
+.addMember > span, .groupProfile_bottom_LD > span {
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 8px;
+    /* cursor: pointer; */
+}
+
+.addMember > p, .groupProfile_bottom_LD > p {
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    color: grey;
+    cursor: pointer;
+}
+
+.addMemberAdd:hover {
+    box-shadow: 2px 5px 1px -2px #297bff;
+    color: #297bff;
+}
+
+.addMemberCancel:hover, .groupProfile_bottom_LD > p:nth-child(2):hover {
+    box-shadow: 2px 5px 1px -2px red;
+    color: red;
+}
+

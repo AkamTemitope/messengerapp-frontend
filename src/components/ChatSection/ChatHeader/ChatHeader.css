@@ -1,0 +1,42 @@
+.chatHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 64px;
+    height: 64px;
+    border-bottom: 1px solid black;
+}
+
+.chatHeader_avatar {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.chatHeader_avatar > span {
+    display: flex;
+    font-size: 1.2rem;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.chatHeader_avatar > span >svg {
+    align-self: center;
+    padding-left: 20px;
+    font-size: 1.5rem;
+}
+
+.chatHeader > svg {
+    font-size: 1.5rem;
+    margin-right: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.chatHeader > svg:active {
+    background-color: rgb(224, 224, 224);
+    border-radius: 50%;
+}

@@ -1,0 +1,23 @@
+.chatMessages {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    background-color: #A5BFE6;
+    align-items: center;
+    overflow-y: auto;
+    padding: 8px 0;
+
+}
+
+.chatMessages::-webkit-scrollbar {
+    width: .4rem;
+}
+
+.chatMessages::-webkit-scrollbar-track {
+    background-image: linear-gradient(rgb(231, 231, 231), rgb(236, 236, 236));
+    border-radius: 25px;
+}
+
+.chatMessages::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(rgb(173, 173, 173), rgb(102, 102, 104));
+}

@@ -1,0 +1,27 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: 30%;
+    height: 98vh;
+    border-right: 2px solid black;
+}
+
+.sidebar_bottom {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.sidebar_bottom::-webkit-scrollbar {
+    width: .4rem;
+}
+
+.sidebar_bottom::-webkit-scrollbar-track {
+    background-image: linear-gradient(rgb(231, 231, 231), rgb(236, 236, 236));
+    border-radius: 25px;
+}
+
+.sidebar_bottom::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(rgb(173, 173, 173), rgb(102, 102, 104));
+}

@@ -1,0 +1,233 @@
+.sidebarHeader {
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.sidebarHeader_left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    cursor: pointer;
+
+}
+
+.sidebarHeader_avatar {
+    margin: 0 10px;
+}
+
+.sidebarHeader_left > span {
+    font-size: 1.2rem;
+    flex: 1;
+}
+
+.sidebarHeader_icons {
+    display: flex;
+    margin-right: 5px;
+    position: relative;
+}
+
+.sidebarHeader_icons > svg {
+    font-size: 1.5rem;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.sidebarHeader_icons > svg:active {
+    background-color: rgb(224, 224, 224);
+    border-radius: 50%;
+}
+
+.addOptions {
+    position: absolute;
+    top: 10%;
+    right: 0px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(197, 197, 197);
+    width: 150px;
+    height: auto;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.addOptions > p {
+    padding: 0px 10px;
+    margin-top: 10px;
+    color: grey;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+  
+}
+.addOptions > p:hover {
+    box-shadow: 2px 5px 1px -2px black;
+    color: black;
+
+}
+
+.addOptions > p:nth-child(3):hover {
+    color: red;
+    box-shadow: 2px 5px 1px -2px red;
+}
+
+
+
+.addGroupOptions {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    right: 0px;
+    width:  200px;
+    background-color: rgb(197, 197, 197);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+
+.addGroupOptions_name {
+    display: flex;
+    padding: auto 0;
+    flex-direction: column;
+}
+
+.addGroupOptions_name > input {
+    padding: 5px;
+    font-size: 1.2rem;
+    align-self: center;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.addGroupOptions_des {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.addGroupOptions_des > textarea {
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    font-size: 1.2rem;
+    align-self: center;
+    max-width:  200px;
+    min-width:  200px;
+    max-height: 150px;
+    min-height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+.addGroupOptions_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.addGroupOptions_button > p {
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    color: grey;
+    cursor: pointer;
+  
+}
+.addGroupOptions_button > p:hover {
+    box-shadow: 2px 5px 1px -2px black;
+    color: black;
+
+}
+
+.addGroupOptions_button > p:nth-child(2):hover {
+    color: red;
+    box-shadow: 2px 5px 1px -2px red;
+}
+
+
+.addContact {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 20%;
+    right: 0px;
+    width:  210px;
+    background-color: rgb(197, 197, 197);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.addContact > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.addContact > form > input {
+    padding: 5px;
+    font-size: 1.2rem;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.addContact > form > button {
+    padding: 5px 10px;
+    margin-top: 5px;
+    outline: transparent;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    color: grey;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.addContact > form > button:hover {
+    box-shadow: 2px 5px 1px -2px black;
+    color: black;
+
+}
+.addContact > span {
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.addContact > p {
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    color: grey;
+    cursor: pointer;
+}
+
+.addContactAdd:hover {
+    box-shadow: 2px 5px 1px -2px #297bff;
+    color: #297bff;
+}
+
+.addContactCancel:hover {
+    box-shadow: 2px 5px 1px -2px red;
+    color: red;
+}
