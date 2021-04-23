@@ -203,7 +203,6 @@ export const userSlice = createSlice({
             })
         },
 
-        // Delete Contact/Group Message
         deleteOneMessage: (state, action) => {
             if (action.payload.type === "contact") {
 
@@ -213,7 +212,6 @@ export const userSlice = createSlice({
             }
         },
 
-        // Delete All Messages
         deleteAllMessages: (state, action) => {
             if (action.payload.type === "contact") {
                 state.contacts = state.contacts.map(contact => {
@@ -235,7 +233,6 @@ export const userSlice = createSlice({
             }
         },
 
-        // Update block status
         updateBlockStatus: (state, action) => {
             state.contacts = state.contacts.map(contact => {
                 if (contact?._id === action.payload._id) {

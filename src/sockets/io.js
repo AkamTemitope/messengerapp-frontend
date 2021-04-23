@@ -5,7 +5,7 @@ import { updateBlockStatus, deleteAllMessages, updateGroup, addGroup, removeGrou
 import events from "./events"
 
 let socket = null
-const ENDPOINT = "https://webchatt-backend.herokuapp.com/" 
+const ENDPOINT = process.env.REACT_APP_BASE_URL 
 const options = {transports: ['websocket', 'polling', 'flashsocket']}
 
 /// connect to server

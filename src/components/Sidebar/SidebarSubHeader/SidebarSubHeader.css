@@ -32,6 +32,11 @@
     background-color: rgb(224, 224, 224);
 }
 
+/* .sidebarSubHeader_elements > span:focus {
+    background-color: rgb(209, 33, 33);
+    border-top: 2px solid orange !important ;
+} */
+
 .searchBar {
     display: flex;
     align-items: center;

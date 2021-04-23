@@ -10,7 +10,6 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
-    "dotenv": "^8.2.0",
     "emoji-picker-react": "^3.4.4",
     "firebase": "^8.2.10",
     "moment": "^2.29.1",
@@ -51,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   }
 }
