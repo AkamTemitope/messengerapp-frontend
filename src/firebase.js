@@ -1,14 +1,14 @@
 import firebase from "firebase"
               
 const firebaseConfig = {
-    apiKey: "AIzaSyB5KADJBqTkO_-lpYy2LTo_In_EYY3in3A",
-    authDomain: "webchatt-2897f.firebaseapp.com",
-    projectId: "webchatt-2897f",
-    storageBucket: "webchatt-2897f.appspot.com",
-    messagingSenderId: "664611824700",
-    appId: "1:664611824700:web:bb6ee4c17b22b91988cf39"
-  };
-
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROGECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
+};
+ 
 const firebaseApp = firebase.initializeApp(firebaseConfig)
 
 const db = firebaseApp.firestore();
