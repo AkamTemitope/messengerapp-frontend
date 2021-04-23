@@ -57,6 +57,4 @@ function Login() {
     )
 }
 
-// const url ="https://yt3.ggpht.com/a/AATXAJzRPUW-rIRu-3DHFqk8XkL4LvdSXmAlQuDcYVXT=s900-c-k-c0xffffffff-no-rj-mo"
-
 export default Login
