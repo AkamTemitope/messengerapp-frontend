@@ -46,8 +46,8 @@ function Login() {
     return (
         <div>       
             <div className="login">
-                <img src="https://i.postimg.cc/63HpwV31/webchatT.png" alt="logo"/>
-                <h1>Welcome to webChatT</h1>
+                <img src="https://i.postimg.cc/zXqXxPvQ/logoblue-clear.png" alt="logo"/>
+                {/* <h1>Welcome to webChatT</h1> */}
                 <div className="login-button">
                     {/* <p>Sign-In</p> */}
                     <button onClick={signIn}>Sign-In with google</button>

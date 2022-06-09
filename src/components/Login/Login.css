@@ -8,7 +8,7 @@
     height: 500px;
     margin: auto;
     padding: 40px;
-    background-color: #999999;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(226,226,226,1) 50%, rgba(255,255,255,1) 90%);
     border-radius: 10px;
     box-shadow: 3px 3px 10px black ;
     transition: box-shadow .2s ease-in-out;
@@ -51,7 +51,7 @@ h1 {
     padding: 10px 50px;
     border: none;
     font-size: 1.5rem;
-    background-color: #297bff;
+    background-color: #2AABEE;
     border-radius: 8px;
     cursor: pointer;
     color: white;
@@ -60,7 +60,7 @@ h1 {
 }
 
 .login-button > button:hover {
-    background-color: #000000;
+    background-color: #0088CC;
 }
 
 
