@@ -37,7 +37,7 @@
     min-height: 64px;
     height: 64px;
     padding-right: 5px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #8C8C8C;
 }
 
 
@@ -61,7 +61,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    /* border: 1px solid black; */
+    /* border: 1px solid #8C8C8C; */
 }
 .contactProfile_middle > img {
     outline: red;
@@ -99,7 +99,7 @@
     justify-content: space-evenly;
     min-height: 128px;
     /* padding: 20px; */
-    border-top: 1px solid black;
+    border-top: 1px solid #8C8C8C;
 
 }
 
@@ -118,7 +118,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    border-top: 1px solid black;
+    border-top: 1px solid #8C8C8C;
     padding: 10px;
 
 }
@@ -127,7 +127,7 @@
     padding: 10px 50px;
     margin: 15px;
     border: none;
-    background-color: #297bff;
+    background-color: #2AABEE;
     border-radius: 8px;
     cursor: pointer;
     color: white;
@@ -137,7 +137,7 @@
 }
 
 .contactProfile_bottom > button:hover {
-    background-color: #000000;
+    background-color: #0088CC;
 }
 
 .contactProfile_block {
@@ -145,7 +145,7 @@
 
 }
 .contactProfile_block:hover {
-    background-color: #000000 !important;
+    background-color: #db1d00 !important;
 }
 
 

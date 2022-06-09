@@ -4,7 +4,7 @@
     min-width: 300px;
     width: 30%;
     height: 98vh;
-    border-right: 2px solid black;
+    border-right: 2px solid #8C8C8C;
 }
 
 .userProfile_top {
@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    border-top: 1px solid black;
+    border-top: 1px solid #8C8C8C;
 }
 .userProfile_middle > img {
     outline: red;
@@ -78,7 +78,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex: .2;
-    border-top: 1px solid black;
+    border-top: 1px solid #8C8C8C;
     margin-bottom: 10px;
 
 }
@@ -127,7 +127,7 @@
 }
 
 .userProfile_logout:hover {
-    background-color: #000000;
+    background-color: #db1d00;
 }
 
 

@@ -37,7 +37,7 @@
     min-height: 64px;
     height: 64px;
     padding-right: 5px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #8C8C8C;
 }
 
 .groupProfile_top > p  {
@@ -169,7 +169,7 @@
     justify-content: space-evenly;
     height: fit-content;
     padding: 10px 15px;
-    border-top: 1px solid black;
+    border-top: 1px solid #8C8C8C;
 
 }
 
@@ -254,7 +254,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    border-top: 1px solid black;
+    border-top: 1px solid #8C8C8C;
     padding: 10px;
 
 }
@@ -263,7 +263,7 @@
     padding: 10px 50px;
     margin: 15px;
     border: none;
-    background-color: #297bff;
+    background-color: #2AABEE;
     border-radius: 8px;
     cursor: pointer;
     color: white;
@@ -273,7 +273,7 @@
 }
 
 .groupProfile_bottom > button:hover {
-    background-color: #000000;
+    background-color: #0088CC;
 }
 
 .groupProfile_delete {
@@ -281,13 +281,13 @@
 
 }
 .groupProfile_delete:hover {
-    background-color: #000000 !important;
+    background-color: #db1d00 !important;
 }
 
 .groupProfile_members {
     display: flex;
     flex-direction: column;
-    border-top: 1px solid black;
+    border-top: 1px solid #8C8C8C;
 }
 
 .groupProfile_scroll > span {
